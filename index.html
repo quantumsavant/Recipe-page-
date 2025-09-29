@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Satroopa Kitchens | Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="nav-header">
+        <div class="logo">Satroopa Kitchens</div>
+        <div class="nav-toggle" onclick="toggleMenu()">⋮</div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section with Image Tag -->
+    <header class="hero-img">
+      <img
+        src="./assets/hero-page5.png"
+        alt="Delicious Food from Satroopa Kitchens" />
+      <div class="hero-text">
+        <h1>Welcome to Satroopa Kitchens</h1>
+        <p>"The best taste comes from the safest hands."</p>
+      </div>
+    </header>
+
+    <!-- Special Dishes Section -->
+    <section class="recipe-section">
+      <h2>Our Specialties</h2>
+      <div class="recipes">
+        <div class="recipe-card">
+          <img src="./assets/kofta.png" alt="Kofta" />
+          <h3>Kofta</h3>
+          <p>
+            Soft and juicy meatballs simmered in a rich, spiced gravy – a royal
+            treat!
+          </p>
+        </div>
+        <div class="recipe-card">
+          <img src="./assets/halua.png" alt="Halua" />
+          <h3>Halua</h3>
+          <p>
+            A traditional dessert made with love, roasted semolina, ghee, and
+            dry fruits.
+          </p>
+        </div>
+        <div class="recipe-card">
+          <img src="./assets/pulao.png" alt="Pulao" />
+          <h3>Pulao</h3>
+          <p>
+            Fragrant basmati rice cooked with spices and vegetables – simple yet
+            elegant.
+          </p>
+        </div>
+        <div class="recipe-card">
+          <img src="./assets/Chiken-curry.png" alt="Chicken Curry" />
+          <h3>Chicken Curry</h3>
+          <p>
+            Slow-cooked chicken in aromatic spices, packed with bold and
+            comforting flavors.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>&copy; 2025 Satroopa Kitchens. All rights reserved.</footer>
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
